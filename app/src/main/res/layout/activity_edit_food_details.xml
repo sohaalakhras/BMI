@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddFoodDetails"
+    tools:context=".EditFoodDetails"
     android:orientation="vertical">
 
     <TextView
@@ -17,12 +17,11 @@
         android:background="@color/blue"
         android:textAlignment="center"
     "/>
-
     <TextView
-        android:id="@+id/addFoodDetails_tv1"
+        android:id="@+id/EditFoodDetails_tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Food Details"
+        android:text="Edit Food Details"
         android:textColor="@color/blue"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -39,7 +38,7 @@
         android:rowCount="3">
 
         <TextView
-            android:id="@+id/addFoodDetails_tv_name"
+            android:id="@+id/EditFoodDetails_tv_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Name"
@@ -52,7 +51,7 @@
             android:layout_marginBottom="15dp"/>
 
         <EditText
-            android:id="@+id/addFoodDetails_et_name"
+            android:id="@+id/EditFoodDetails_et_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/border"
@@ -64,7 +63,7 @@
             android:layout_marginBottom="15dp"/>
 
         <TextView
-            android:id="@+id/addFoodDetails_tv_category"
+            android:id="@+id/EditFoodDetails_tv_category"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Category"
@@ -88,7 +87,7 @@
             android:layout_marginBottom="15dp"/>
 
         <TextView
-            android:id="@+id/addFoodDetails_tv_calory"
+            android:id="@+id/EditFoodDetails_tv_calory"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Calory"
@@ -101,7 +100,7 @@
             android:textStyle="bold"/>
 
         <EditText
-            android:id="@+id/addFoodDetails_et_calory"
+            android:id="@+id/EditFoodDetails_et_calory"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:background="@drawable/border"
@@ -112,10 +111,10 @@
             android:layout_rowWeight="1"/>
 
         <TextView
-            android:id="@+id/addFoodDetails_tv_calUnit"
+            android:id="@+id/EditFoodDetails_tv_calUnit"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="col/g"
+            android:text="cal/g"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -127,10 +126,10 @@
     </GridLayout>
 
     <TextView
-        android:id="@+id/addFoodDetails_tv_photo"
+        android:id="@+id/EditFoodDetails_tv_photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="photo"
+        android:text="Photo"
         android:textSize="23sp"
         android:textColor="@color/blue"
         android:textStyle="bold"
@@ -138,7 +137,7 @@
         android:layout_marginTop="25dp"/>
 
     <ImageView
-        android:id="@+id/addFoodDetails_img_food"
+        android:id="@+id/EditFoodDetails_img_food"
         android:layout_width="350dp"
         android:layout_height="300dp"
         android:layout_marginLeft="25dp"
@@ -177,5 +176,5 @@
 
     </LinearLayout>
 
-
 </LinearLayout>
+
