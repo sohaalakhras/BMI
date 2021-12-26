@@ -4,24 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login"
+    tools:context=".Signup"
     android:orientation="vertical">
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BMI Analyzer"
+        android:text="@string/activities_header"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="@color/blue"
         android:textAlignment="center"
-        android:padding="10dp"/>
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
 
     <TextView
+        android:id="@+id/signup_tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Creat New Account"
+        android:text="@string/signup_tv1"
         android:textColor="@color/blue"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -29,73 +32,104 @@
         android:layout_marginTop="30dp"/>
 
     <TextView
+        android:id="@+id/signup_tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="If you do not altready have an account"
+        android:text="@string/signup_tv2"
         android:textSize="15sp"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:typeface="serif"/>
 
     <EditText
+        android:id="@+id/signup_et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:inputType="text"
+        android:hint="@string/signup_et_name"
+        android:backgroundTint="@color/blue"
         android:layout_marginTop="50dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:paddingLeft="10dp"/>
 
     <EditText
+        android:id="@+id/signup_et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-Mail"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:paddingLeft="10dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
+        android:inputType="textEmailAddress"
+        android:hint="@string/signup_et_email"
+        android:backgroundTint="@color/blue"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:paddingLeft="10dp"/>
 
+
     <EditText
+        android:id="@+id/signup_et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Re-Password"
+        android:inputType="textPassword"
+        android:hint="@string/signup_et_password"
+        android:backgroundTint="@color/blue"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:paddingLeft="10dp"/>
+        android:paddingLeft="10dp"
+        android:drawableEnd="@drawable/visibilty"
+        android:drawablePadding="10dp"/>
 
+    <EditText
+        android:id="@+id/signup_et_RePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/signup_et_RePassword"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp" />
 
     <Button
+        android:id="@+id/signup_btn_create"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="create"
-        android:layout_margin="30dp"
+        android:text="@string/signup_btn_create"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
         android:padding="10dp"
-        android:backgroundTint="@color/blue"/>
+        android:backgroundTint="@color/blue"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="You have an account ?" />
-        <TextView
+            android:id="@+id/signup_tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="log in"
-            android:textColor="@color/blue"/>
+            android:text="@string/signup_tv3"
+            android:typeface="serif"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/signup_tv4_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_tv4_login"
+            android:textColor="@color/blue"
+            android:typeface="serif"/>
 
     </LinearLayout>
 
 
+</LinearLayout>

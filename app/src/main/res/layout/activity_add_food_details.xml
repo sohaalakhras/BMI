@@ -10,19 +10,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BMI Analyzer"
-        android:textSize="25dp"
+        android:text="@string/activities_header"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="@color/blue"
         android:textAlignment="center"
-    "/>
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
 
     <TextView
         android:id="@+id/addFoodDetails_tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Food Details"
+        android:text="@string/addFoodDetails_tv1"
         android:textColor="@color/blue"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -42,7 +43,7 @@
             android:id="@+id/addFoodDetails_tv_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Name"
+            android:text="@string/addFoodDetails_tv_name"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -55,7 +56,7 @@
             android:id="@+id/addFoodDetails_et_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/border"
+            android:background="@drawable/blue_border_shape"
             android:inputType="text"
             android:autofillHints=""
             android:layout_columnSpan="2"
@@ -67,7 +68,7 @@
             android:id="@+id/addFoodDetails_tv_category"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Category"
+            android:text="@string/addFoodDetails_tv_category"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -80,7 +81,7 @@
             android:id="@+id/addFoodDetails_sp_category"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_baseline_arrow_drop_down_24"
+            android:background="@drawable/blue_border_shape"
             android:spinnerMode="dropdown"
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
@@ -91,7 +92,7 @@
             android:id="@+id/addFoodDetails_tv_calory"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Calory"
+            android:text="@string/addFoodDetails_tv_calory"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -104,7 +105,7 @@
             android:id="@+id/addFoodDetails_et_calory"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:background="@drawable/border"
+            android:background="@drawable/blue_border_shape"
             android:inputType="numberDecimal"
             android:autofillHints=""
             android:layout_columnSpan="1"
@@ -115,7 +116,7 @@
             android:id="@+id/addFoodDetails_tv_calUnit"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="col/g"
+            android:text="@string/addFoodDetails_tv_calUnit"
             android:layout_columnSpan="1"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -130,7 +131,7 @@
         android:id="@+id/addFoodDetails_tv_photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="photo"
+        android:text="@string/addFoodDetails_tv_photo"
         android:textSize="23sp"
         android:textColor="@color/blue"
         android:textStyle="bold"
@@ -142,7 +143,7 @@
         android:layout_width="350dp"
         android:layout_height="300dp"
         android:layout_marginLeft="25dp"
-        android:src="@drawable/foodd" />
+        android:src="@drawable/food" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -152,28 +153,28 @@
         android:layout_marginLeft="25dp"
         android:layout_gravity="center">
 
-        <Button
-            android:id="@+id/addFoodDetails_btn_upload"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="upload Photo"
-            android:backgroundTint="@color/blue"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAllCaps="false"
-            android:padding="10dp"/>
+    <Button
+        android:id="@+id/addFoodDetails_btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addFoodDetails_btn_upload"
+        android:backgroundTint="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:padding="10dp"/>
 
-        <Button
-            android:id="@+id/addFoodDetails_btn_save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save"
-            android:backgroundTint="@color/blue"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAllCaps="false"
-            android:padding="10dp"
-            android:layout_marginLeft="50dp"/>
+    <Button
+        android:id="@+id/addFoodDetails_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addFoodDetails_btn_save"
+        android:backgroundTint="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:layout_marginLeft="50dp"/>
 
     </LinearLayout>
 
