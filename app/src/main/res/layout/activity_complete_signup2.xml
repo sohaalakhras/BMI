@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteSignup2"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activities_header"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/completeSignUp_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/completeSignUp_tv1"
+        android:textColor="@color/blue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:lineHeight="50sp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="4"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/completeSignUp_tv_gender"
+            android:textSize="23sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"/>
+        <RadioGroup
+            android:id="@+id/completeSignUp_rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <RadioButton
+                android:id="@+id/completeSignUp_rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/completeSignUp_rb_female"
+                android:textSize="18sp"
+                android:textColor="@color/blue"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <RadioButton
+                android:id="@+id/completeSignUp_rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/completeSignUp_rb_male"
+                android:textColor="@color/blue"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+
+        <TextView
+        android:id="@+id/completeSignUp_tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/completeSignUp_tv_weight"
+        android:textSize="23sp"
+        android:layout_gravity="left"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_increment_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_border_shape"
+            android:drawableStart="@drawable/ic_baseline_add"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <EditText
+            android:id="@+id/completeSignUp_et_weight"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/blue_border_shape" />
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_decrement_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_border_shape"
+            android:drawableStart="@drawable/ic_baseline_minimize"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completeSignUp_tv_kg"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completeSignUp_tv_length"
+            android:textSize="23sp"
+            android:layout_gravity="left"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_increment_length"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_border_shape"
+            android:drawableStart="@drawable/ic_baseline_add"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <EditText
+            android:id="@+id/completeSignUp_et_length"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_border_shape"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_decrement_length"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_border_shape"
+            android:drawableStart="@drawable/ic_baseline_minimize"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completeSignUp_tv_cm"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/completeSignUp_tv_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completeSignUp_tv_dob"
+            android:textSize="22sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+
+        <EditText
+            android:id="@+id/completeSignUp_et_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/blue_border_shape"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:hint="dd/mm/yyyy"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/completeSignUp_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/completeSignUp_btn_save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/blue"
+        android:padding="10dp"/>
+
+</LinearLayout>
